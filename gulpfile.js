@@ -58,7 +58,7 @@ gulp.task('script', gulp.series('lint', function () {
 //task to watch when a js file is edited, then run script when it is
 gulp.task('watch', function() {
     gulp.watch('scss/*.scss', gulp.series('sass'));
-    gulp.watch('js/*.js', gulp.series('babel', 'script'));
+    gulp.watch('./JS/*.js', gulp.series('babel', 'script'));
  });
 
 

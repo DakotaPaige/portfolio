@@ -9,6 +9,19 @@
   <link rel="stylesheet" type="text/css" media="screen" href="build/css/style.min.css" />
 </head>
 <body>
+  <nav>
+    <ul class="social-links">
+      <li><a href="https://github.com/DakotaPaige">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/dakota-mauza-191384152/">LinkedIn</a></li>
+    </ul>
+
+    <ul class="website-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">My Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
   <header>
       <div class="front-banner">
         <h1>Dakota Mauza</h1>
@@ -16,7 +29,7 @@
       </div>
   </header>
 
-  <section class="about-me">
+  <section class="about-me" id="about">
     <h2 class="section-headers">About Me</h2>
     <div class="about-section">
       <img src="images/me.png" alt="Dakota Mauza" class="picture-of-me">
@@ -24,9 +37,68 @@
     </div>
   </section>
 
-  <section class="projects-section">
+  <section class="projects-section" id="projects">
     <h2 class="section-headers">My Projects</h2>
-    
+
+    <!-- standard div layout for a project (alternate between img and description first) -->
+    <div class="project">
+      <img src="images/inhabitent-gif.gif" alt="Inhabitent Website">
+      <div class="project-description">
+        <p>WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE </p>
+        <a href="https://github.com/DakotaPaige/inhabitant">Github</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-description">
+        <p>Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here </p>
+        <a href="https://github.com/DakotaPaige/instanews">Github</a>
+        <a href="https://dakotapaige.github.io/instanews/">Website</a>
+      </div>
+      <img src="images/instanews-sample.gif" alt="Instanews Website">
+    </div>
+
+    <div class="project">
+      <img src="images/quotes-on-dev-gif.gif" alt="Quotes on Dev Website">
+      <div class="project-description">
+        <p>A nice warm laptop for me to sit on that box? i can fit in that box and eat and than sleep on your face love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) but pounce on unsuspecting person.</p>
+        <a href="https://github.com/DakotaPaige/quotes-on-dev">Github</a>
+      </div>
+    </div>
   </section>
+
+  <section class="contact-me" id="contact">
+    <h2 class="section-headers">Contact Me</h2>
+
+    <div class="contact-section">
+      
+      <!-- CONTACT FORM FROM WUFOO -->
+      <div class="contact-form">
+          <form action="https://formspree.io/dakota.paige@hotmail.com"
+                method="POST">
+              <h4>Your Name:</h4>
+              <input type="text" name="name">
+              <h4>Your Email:</h4>
+              <input type="email" name="_replyto" placeholder="kittens@example.com">
+              <h4>Subject:</h4>
+              <input type="text" name="subject">
+              <h4>Message:</h4>
+              <textarea name="message" placeholder="Your message"></textarea>
+              <button type="submit">Send</button>
+          </form>            
+      </div>
+
+      <div class="contact-information">
+        <p><span class="contact-title">E-mail: </span>dakota.paige@hotmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
+  <script src="build/js/function.min.js"></script>
 </body>
 </html>

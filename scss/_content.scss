@@ -3,7 +3,7 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
+  max-width: 800px;
   .picture-of-me {
     border-radius: 50%;
     width: 200px;
@@ -28,4 +28,29 @@
 
 .about-me {
   padding: 20px 0;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  img {
+    width: 450px;
+    height: 250px; //CHANGE TO 100% IF YOU CAN GET IT TO WORK PROPERLY
+  }
+  .project-description {
+    max-width: 450px;
+    align-self: center;
+    color: $color__dark-grey;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color__light-orange;
+      font-family: sans-serif;
+      &:hover {
+        color: $color__dark-orange;
+      }
+    }
+  }
 }
