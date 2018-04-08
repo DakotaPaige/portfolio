@@ -25,16 +25,16 @@ $(document).ready(function () {
     }
   };
 
-  let images = ['images/cat1.png', 'images/cat2.png', 'images/cat3.png', 'images/cat4.png', 'images/cat2.png', 'images/cat3.png', 'images/cat4.png'];
+  let images = ['images/sitting-cat.png', 'images/cat1.png', 'images/cat2.png', 'images/cat3.png', 'images/cat4.png', 'images/cat2.png', 'images/cat3.png', 'images/cat4.png', 'images/cat2.png', 'images/cat3.png', 'images/cat4.png', 'images/cat2.png', 'images/cat3.png', 'images/cat4.png'];
 
   let obj = { curImg: 0 };
 
   // create tween for image transition
-  let tween2 = TweenMax.to(obj, 0.5, {
+  let tween2 = TweenMax.to(obj, 0.2, {
     curImg: images.length - 1,
     roundProps: 'curImg',
-    repeat: 3,
-    immediateRender: false,
+    repeat: 0,
+    immediateRender: true,
     ease: Linear.easeNone,
     onUpdate: function () {
       $('#cat').attr('src', images[obj.curImg]);
