@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('nav').addClass('banner-header');
 
   $(window).scroll(function(){
-    var currentScreenPosition  = $(document).scrollTop();
+    let currentScreenPosition  = $(document).scrollTop();
     if (currentScreenPosition < $('header').height()) {
       $( 'nav' ).addClass( 'banner-header' );
     } else {
@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   //defines the path for the cat to walk along
-  var catpath = {
+  let catpath = {
     entry : {
       autoRotate: true,
       values: [
@@ -30,20 +30,50 @@ $(document).ready(function() {
     }
   };
 
-  //init scrollmagic controller
-  var controller = new ScrollMagic.Controller();
+  let images = [
+    'images/cat1.png',
+    'images/cat2.png',
+    'images/cat3.png',
+    'images/cat4.png',
+    'images/cat2.png',
+    'images/cat3.png',
+    'images/cat4.png'
+  ];
 
-  //create tween for scrollmagic
-  var tween = new TimelineMax()
+  let obj = {curImg: 0};
+
+  // create tween for image transition
+  let tween2 = TweenMax.to(obj, 0.5, 
+      {
+        curImg: images.length - 1,
+        roundProps: 'curImg',
+        repeat: 3,
+        immediateRender: false,
+        ease: Linear.easeNone,
+        onUpdate: function() {
+          $('#cat').attr('src', images[obj.curImg]);
+        }
+      });
+
+  // console.log(tween2);
+
+  //create tween for movement for scrollmagic
+  let tween = new TimelineMax()
     .add(TweenMax.to($('#cat'), 1.2,{css:{bezier:catpath.entry}, ease:Power1.easeInOut}))
     .add(TweenMax.to($('#cat'), 1.2,{css:{bezier:catpath.leave}, ease:Power1.easeInOut}));
 
+  //init scrollmagic controller
+  let controller = new ScrollMagic.Controller();
+
   //build scene for scrollmagic
-  var scene = new ScrollMagic.Scene({triggerElement:'#trigger', duration: 500})
+  let scene = new ScrollMagic.Scene({triggerElement:'#trigger', duration: 400})
                   .setPin('#target')
                   .setTween(tween)
                   // .addIndicators({name: "2 (duration: 300"})
                   .addTo(controller);
-
+  
+  let scene2 = new ScrollMagic.Scene({triggerElement: '#trigger', duration: 400, offset: 50})
+                   .setTween(tween2)
+                   .addTo(controller);   
   
 })
