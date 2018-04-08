@@ -1,3 +1,7 @@
+p, h1, h2, h3, h4, h5, h6, a {
+  font-family: $main-font;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -15,7 +19,6 @@ nav {
     li {
       text-transform: uppercase;
       margin: 0 10px;
-      font-family: sans-serif;
       a {
         color: $color__dark-blue;
         text-decoration: none;

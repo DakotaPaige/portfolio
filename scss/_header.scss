@@ -12,7 +12,6 @@ header {
   h1 {
     color: white;
     text-transform: uppercase;
-    font-family: sans-serif;
     font-size: 40pt;
     display: block;
     text-align: center;
@@ -20,8 +19,14 @@ header {
   }
   h2 {
     color: white;
-    font-family: sans-serif;
     text-align: center;
     margin: 0;
   }
+}
+
+//CAT STYLING
+
+#cat {
+  position: relative;
+  right: 250px;
 }

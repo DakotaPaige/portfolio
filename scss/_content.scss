@@ -21,7 +21,6 @@
 
 .section-headers {
   text-align: center;
-  font-family: sans-serif;
   text-transform: uppercase;
   color: $color__dark-grey;
 }
@@ -54,3 +53,77 @@
     }
   }
 }
+
+//contact me section
+.contact-section {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto 50px;
+  .contact-form {
+    width: 50%;
+    h4 {
+      margin: 5px 0;
+    }
+    input {
+      width: 75%;
+      border: 2px solid $color__dark-blue;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    textarea {
+      width: 75%;
+      height: 100px;
+      border: 2px solid $color__dark-blue;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    button {
+      display: block;
+      border: 2px solid $color__dark-blue;
+      background-color: white;
+      color: $color__dark-blue;
+      padding: 5px 20px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+      &:hover {
+        border-color: $color__light-orange;
+        background-color: $color__light-orange;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .contact-information {
+    width: 50%;
+  }
+
+  .contact-title {
+    font-weight: bold;
+  }
+
+  .contact-link {
+    border: 2px solid $color__dark-blue;
+    border-radius: 3px;
+    color: $color__dark-blue;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      border-color: $color__light-orange;
+      background-color: $color__light-orange;
+    }
+  }
+
+  .contact-links {
+    margin-top: 30px;
+  }
+}
+
+footer {
+  background-color: $color__dark-blue;
+  height: 50px;
+}
+
