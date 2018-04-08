@@ -637,4 +637,20 @@ header {
 
 footer {
   background-color: #00404A;
-  height: 50px; }
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  footer a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; }
+    footer a:hover {
+      cursor: pointer;
+      text-decoration: underline; }
