@@ -56,7 +56,7 @@ $(document).ready(function () {
 
   let scene2 = new ScrollMagic.Scene({ triggerElement: '#trigger', duration: 300 }).setTween(tween2).addTo(controller);
 
-  //trying to add in smoothscroll
+  //smoothscroll
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
