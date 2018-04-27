@@ -1,32 +1,33 @@
 //Styling for main banner header
 
 header {
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0,0.25)), url('../../images/mountain-lake-sunset.png');
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 40pt;
-    display: block;
-    text-align: center;
-    margin: 0;
-  }
-  h2 {
-    color: white;
-    text-align: center;
-    margin: 0;
-  }
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url('../../images/mountain-lake-sunset.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 40pt;
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    h2 {
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
 }
 
 //CAT STYLING
 
 #cat {
-  position: relative;
-  right: 250px;
+    position: relative;
+    right: 250px;
 }
