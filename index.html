@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +10,48 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="build/css/style.min.css" />
 </head>
+
 <body>
   <nav>
     <ul class="social-links">
-      <li><a href="https://github.com/DakotaPaige">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/dakota-mauza-191384152/">LinkedIn</a></li>
+      <li>
+        <a href="https://github.com/DakotaPaige">Github</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/dakota-mauza-191384152/">LinkedIn</a>
+      </li>
     </ul>
 
     <ul class="website-links">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">My Projects</a></li>
-      <li><a href="#contact">Contact Me</a></li>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#projects">My Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact Me</a>
+      </li>
     </ul>
   </nav>
 
   <header id="top">
-      <div class="front-banner">
-        <h1>Dakota Mauza</h1>
-        <h2>Full-Stack Developer</h2>
-        <img id="cat" src="images/sitting-cat.png" alt="cat">
-      </div>
+    <div class="front-banner">
+      <h1>Dakota Mauza</h1>
+      <h2>Full-Stack Developer</h2>
+      <img id="cat" src="images/sitting-cat.png" alt="cat">
+    </div>
   </header>
 
   <section class="about-me" id="about">
     <h2 class="section-headers">About Me</h2>
     <div class="about-section">
       <img src="images/me.png" alt="Dakota Mauza" class="picture-of-me">
-      <p>WRITE A LITTLE BIT ABOUT YOURSELF LIKE HOW GREAT OF A PROGRAMMER YOU ARE AND HOW MANY LANGUAGES YOU KNOW AND THAT YOU REALLY LIKE KITTENS AND HIKING AND PHOTOGRAPHY AND VARIOUS OTHER THINGS OK</p>
+      <p>Hi! My name's Dakota, I'm currently a full stack development student at RED Academy in Vancouver. I have experience
+        working in front end development using Javascript and Python, with frameworks such as React, and back end development
+        using Node.js and GraphQL. I have work experience as a freelance web designer as well as spending multiple years
+        in the customer service industry. In my spare time, I love to hike and bring along my Canon t5i for some photography
+        practice as well.</p>
     </div>
   </section>
 
@@ -46,14 +62,21 @@
     <div class="project">
       <img src="images/inhabitent-gif.gif" alt="Inhabitent Website">
       <div class="project-description">
-        <p>WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE WRITE SOMETHING ABOUT INHABITENT HERE </p>
+        <p>Inhabitent is a faux nature-inspired shop front and blog site built using Wordpress. Developed in PHP and javascript,
+          it features multiple custom post types and taxonomies, utilizes the Custom Field Suite plugin to customize the
+          wordpress back end, custom widget plug ins for the sidebar, and more as listed in the repo. This project also utilized
+          jQuery and CSS animations for multiple features, and was a fun learning experience to deep dive into some features
+          of Wordpress.
+        </p>
         <a href="https://github.com/DakotaPaige/inhabitant">Github</a>
       </div>
     </div>
 
     <div class="project">
       <div class="project-description">
-        <p>Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here Write something about instanews here </p>
+        <p>Instanews was a great project to dive into API requests using javascript and jQuery to fetch the top 12 latest stories
+          from the New York Times API. Using a simple HTML/SASS designed page with a few animations, I was able to focus
+          on fetching from the NYT API using the .Ajax method available from jQuery. </p>
         <a href="https://github.com/DakotaPaige/instanews">Github</a>
         <a href="https://dakotapaige.github.io/instanews/">Website</a>
       </div>
@@ -63,7 +86,11 @@
     <div class="project">
       <img src="images/quotes-on-dev-gif.gif" alt="Quotes on Dev Website">
       <div class="project-description">
-        <p>A nice warm laptop for me to sit on that box? i can fit in that box and eat and than sleep on your face love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) but pounce on unsuspecting person.</p>
+        <p>Quotes on dev is a Wordpress site inspired by the QuotesOnDesign site. It's built out in PHP and javascript, and
+          uses the Wordpress REST API to fetch and post quotes. Using the jQuery Ajax method, I made a GET request to the
+          WP API to dynamically add a new quote to the front page, as well as made a POST request to submit a quote if a
+          user is logged in. The website is responively designed using a mobile-first approach for three views, uses Gulp
+          for running build tasks, and uses SASS as a CSS pre-processor.</p>
         <a href="https://github.com/DakotaPaige/quotes-on-dev">Github</a>
       </div>
     </div>
@@ -73,26 +100,26 @@
     <h2 class="section-headers">Contact Me</h2>
 
     <div class="contact-section">
-      
+
       <!-- CONTACT FORM FROM WUFOO -->
       <div class="contact-form">
-          <form action="https://formspree.io/dakota.paige@hotmail.com"
-                method="POST">
-              <h4>Your Name:</h4>
-              <input type="text" name="name">
-              <h4>Your Email:</h4>
-              <input type="email" name="_replyto" placeholder="kittens@example.com">
-              <h4>Subject:</h4>
-              <input type="text" name="subject">
-              <h4>Message:</h4>
-              <textarea name="message" placeholder="Your message"></textarea>
-              <button type="submit">Send</button>
-          </form>            
+        <form action="https://formspree.io/dakota.paige@hotmail.com" method="POST">
+          <h4>Your Name:</h4>
+          <input type="text" name="name">
+          <h4>Your Email:</h4>
+          <input type="email" name="_replyto" placeholder="kittens@example.com">
+          <h4>Subject:</h4>
+          <input type="text" name="subject">
+          <h4>Message:</h4>
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
 
       <div class="contact-information">
         <p>Send me a message with the form to the left, send me an e-mail, or visit one of my profiles below!</p>
-        <p><span class="contact-title">E-mail: </span>dakota.paige@hotmail.com</p>
+        <p>
+          <span class="contact-title">E-mail: </span>dakota.paige@hotmail.com</p>
         <div class="contact-links">
           <a href="https://github.com/DakotaPaige" class="contact-link">Github</a>
           <a href="https://www.linkedin.com/in/dakota-mauza-191384152/" class="contact-link">LinkedIn</a>
@@ -105,11 +132,9 @@
     <a href="#top">Back to top</a>
   </footer>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
   <script src="lib/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
   <script src="lib/animation.velocity.min.js"></script>
@@ -117,4 +142,5 @@
   <script src="lib/animation.gsap.min.js"></script>
   <script src="JS/function.js"></script>
 </body>
+
 </html>
