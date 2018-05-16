@@ -2,6 +2,8 @@ $(document).ready(function () {
   //add class to make header transparent on load
   $('nav').addClass('banner-header');
 
+  AOS.init();
+
   $(window).scroll(function () {
     let currentScreenPosition = $(document).scrollTop();
     if (currentScreenPosition < $('header').height()) {

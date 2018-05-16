@@ -22,18 +22,23 @@
 .section-headers {
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 70px;
   color: $color__dark-grey;
 }
 
 .about-me {
   padding: 20px 0;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 150px auto;
   img {
     width: 450px;
     height: 250px; //CHANGE TO 100% IF YOU CAN GET IT TO WORK PROPERLY
