@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="build/css/style.min.css" />
-  <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 </head>
 
 <body>
@@ -44,7 +43,7 @@
     </div>
   </header>
 
-  <section class="about-me" id="about"  data-aos="fade-up">
+  <section class="about-me" id="about">
     <h2 class="section-headers">About Me</h2>
     <div class="about-section">
       <img src="images/me.png" alt="Dakota Mauza" class="picture-of-me">
@@ -60,17 +59,8 @@
     <h2 class="section-headers">My Projects</h2>
 
     <!-- standard div layout for a project (alternate between img and description first) -->
-    <div class="project" data-aos="fade-right">
-      <img src="images/inhabitent-gif.gif" alt="Instant Theatre Website">
-      <div class="project-description">
-        <p>WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE 
-        </p>
-        <a href="https://github.com/DakotaPaige/inhabitant">Github</a>
-      </div>
-    </div>
-
-
-    <div class="project" data-aos="fade-left">
+    <div class="project">
+      <img src="images/inhabitent-gif.gif" alt="Inhabitent Website">
       <div class="project-description">
         <p>Inhabitent is a faux nature-inspired shop front and blog site built using Wordpress. Developed in PHP and javascript,
           it features multiple custom post types and taxonomies, utilizes the Custom Field Suite plugin to customize the
@@ -80,10 +70,20 @@
         </p>
         <a href="https://github.com/DakotaPaige/inhabitant">Github</a>
       </div>
-      <img src="images/inhabitent-gif.gif" alt="Inhabitent Website">
     </div>
 
-    <div class="project" data-aos="fade-right">
+    <div class="project">
+      <div class="project-description">
+        <p>Instanews was a great project to dive into API requests using javascript and jQuery to fetch the top 12 latest stories
+          from the New York Times API. Using a simple HTML/SASS designed page with a few animations, I was able to focus
+          on fetching from the NYT API using the .Ajax method available from jQuery. </p>
+        <a href="https://github.com/DakotaPaige/instanews">Github</a>
+        <a href="https://dakotapaige.github.io/instanews/">Website</a>
+      </div>
+      <img src="images/instanews-sample.gif" alt="Instanews Website">
+    </div>
+
+    <div class="project">
       <img src="images/quotes-on-dev-gif.gif" alt="Quotes on Dev Website">
       <div class="project-description">
         <p>Quotes on dev is a Wordpress site inspired by the QuotesOnDesign site. It's built out in PHP and javascript, and
@@ -93,17 +93,6 @@
           for running build tasks, and uses SASS as a CSS pre-processor.</p>
         <a href="https://github.com/DakotaPaige/quotes-on-dev">Github</a>
       </div>
-    </div>
-
-    <div class="project" data-aos="fade-left">
-      <div class="project-description">
-        <p>Instanews was a great project to dive into API requests using javascript and jQuery to fetch the top 12 latest stories
-          from the New York Times API. Using a simple HTML/SASS designed page with a few animations, I was able to focus
-          on fetching from the NYT API using the .Ajax method available from jQuery. </p>
-        <a href="https://github.com/DakotaPaige/instanews">Github</a>
-        <a href="https://dakotapaige.github.io/instanews/">Website</a>
-      </div>
-      <img src="images/instanews-sample.gif" alt="Instanews Website">
     </div>
   </section>
 
@@ -151,7 +140,6 @@
   <script src="lib/animation.velocity.min.js"></script>
   <script src="lib/debug.addIndicators.min.js"></script>
   <script src="lib/animation.gsap.min.js"></script>
-  <script src="node_modules/aos/dist/aos.js"></script>
   <script src="JS/function.js"></script>
 </body>
 

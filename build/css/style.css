@@ -492,9 +492,10 @@ nav {
     color: white; }
 
 header {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  background-color: #274C32;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/mountain-lake-sunset-compressed.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/mountain-lake-sunset-compressed.jpg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,17 +508,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  header::after {
-    content: '';
-    background: white;
-    height: 70px;
-    -webkit-transform: skewY(-2.5deg);
-            transform: skewY(-2.5deg);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    z-index: 1; }
   header h1 {
     color: white;
     text-transform: uppercase;
@@ -562,22 +552,10 @@ header {
 .section-headers {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 70px;
   color: #4B3734; }
 
 .about-me {
-  padding: 20px 0;
-  height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  padding: 20px 0; }
 
 .project {
   display: -webkit-box;
@@ -587,7 +565,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1000px;
-  margin: 150px auto; }
+  margin: 50px auto; }
   .project img {
     width: 450px;
     height: 250px; }

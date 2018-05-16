@@ -1,27 +1,15 @@
 //Styling for main banner header
 
 header {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    //     url('../../images/mountain-lake-sunset-compressed.jpg');
-    background-color: #274C32;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url('../../images/mountain-lake-sunset-compressed.jpg');
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    &::after {
-        content: '';
-        background: white;
-        height: 70px;
-        transform: skewY(-2.5deg);
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 40px;
-        z-index: 1;
-    }
     h1 {
         color: white;
         text-transform: uppercase;
