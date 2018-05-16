@@ -8,6 +8,7 @@
   <title>Dakota Mauza Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="lib/flickity.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="build/css/style.min.css" />
   <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 </head>
@@ -61,7 +62,10 @@
 
     <!-- standard div layout for a project (alternate between img and description first) -->
     <div class="project" data-aos="fade-right">
-      <img src="images/inhabitent-gif.gif" alt="Instant Theatre Website">
+      <div class="main-carousel">
+          <div class="carousel-cell"><img src="images/instant-theatre1.png" alt="Instant Theatre Website"></div>
+          <div class="carousel-cell"><img src="images/instant-theatre2.png" alt="Instant Theatre Website"></div>
+      </div>
       <div class="project-description">
         <p>WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE 
         </p>
@@ -148,6 +152,7 @@
     </script>
   <script src="lib/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+  <script src="lib/flickity.pkgd.min.js"></script>
   <script src="lib/animation.velocity.min.js"></script>
   <script src="lib/debug.addIndicators.min.js"></script>
   <script src="lib/animation.gsap.min.js"></script>

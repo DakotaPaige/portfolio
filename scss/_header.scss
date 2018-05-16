@@ -5,7 +5,7 @@ header {
     width: 100%;
     // background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     //     url('../../images/mountain-lake-sunset-compressed.jpg');
-    background-color: #274C32;
+    background-color: $color__dark-green;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;

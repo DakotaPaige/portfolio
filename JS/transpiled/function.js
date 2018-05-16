@@ -4,6 +4,12 @@ $(document).ready(function () {
 
   AOS.init();
 
+  $('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
+
   $(window).scroll(function () {
     let currentScreenPosition = $(document).scrollTop();
     if (currentScreenPosition < $('header').height()) {
