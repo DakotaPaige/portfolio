@@ -50,10 +50,10 @@
     a {
       text-decoration: none;
       text-transform: uppercase;
-      color: $color__light-orange;
+      color: $color__blueish;
       font-family: sans-serif;
       &:hover {
-        color: $color__dark-orange;
+        color: $color__purple;
       }
     }
   }
@@ -71,20 +71,20 @@
     }
     input {
       width: 75%;
-      border: 2px solid $color__dark-blue;
+      border: 2px solid $color__dark-green;
       border-radius: 3px;
       padding: 5px;
     }
     textarea {
       width: 75%;
       height: 100px;
-      border: 2px solid $color__dark-blue;
+      border: 2px solid $color__dark-green;
       border-radius: 3px;
       padding: 5px;
     }
     button {
       display: block;
-      border: 2px solid $color__dark-blue;
+      border: 2px solid $color__dark-green;
       background-color: white;
       color: $color__dark-blue;
       padding: 5px 20px;
@@ -92,8 +92,8 @@
       text-transform: uppercase;
       font-weight: bold;
       &:hover {
-        border-color: $color__light-orange;
-        background-color: $color__light-orange;
+        border-color: $color__purple;
+        background-color: $color__purple;
         color: white;
         cursor: pointer;
       }
@@ -109,7 +109,7 @@
   }
 
   .contact-link {
-    border: 2px solid $color__dark-blue;
+    border: 2px solid $color__dark-green;
     border-radius: 3px;
     color: $color__dark-blue;
     text-transform: uppercase;
@@ -117,14 +117,21 @@
     text-decoration: none;
     &:hover {
       color: white;
-      border-color: $color__light-orange;
-      background-color: $color__light-orange;
+      border-color: $color__purple;
+      background-color: $color__purple;
     }
   }
 
   .contact-links {
     margin-top: 30px;
   }
+}
+
+.contact-me {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {

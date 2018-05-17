@@ -45,7 +45,7 @@
     </div>
   </header>
 
-  <section class="about-me" id="about"  data-aos="fade-up">
+  <section class="about-me" id="about" data-aos="fade-up">
     <h2 class="section-headers">About Me</h2>
     <div class="about-section">
       <img src="images/me.png" alt="Dakota Mauza" class="picture-of-me">
@@ -63,11 +63,16 @@
     <!-- standard div layout for a project (alternate between img and description first) -->
     <div class="project" data-aos="fade-right">
       <div class="main-carousel">
-          <div class="carousel-cell"><img src="images/instant-theatre1.png" alt="Instant Theatre Website"></div>
-          <div class="carousel-cell"><img src="images/instant-theatre2.png" alt="Instant Theatre Website"></div>
+        <img src="images/instant-theatre1.png" alt="Instant Theatre Website" class="carousel-cell">
+        <img src="images/instant-theatre2.png" alt="Instant Theatre Website" class="carousel-cell">
       </div>
       <div class="project-description">
-        <p>WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE WRITE SOMETHING ABOUT INSTANT THEATRE HERE 
+        <p>While studying at RED Academy I was given the opportunity to work with a Vancouver based improv company Instant Theatre
+          to build out their website for mobile and desktop. It was my first time working with a design and development team,
+          where I was able to learn about hand-offs and git workflow within our team. We built a website based in Wordpress
+          using PHP, Javascript, and HTML/SASS. We built out custom post types, taxonomies, worked with multiple plug-ins
+          including Events Calendar Pro, and I was able to learn a lot while working with the Eventbrite API. For a detailed
+          explanation of the plug-ins and features implemented, visit the github repo.
         </p>
         <a href="https://github.com/DakotaPaige/inhabitant">Github</a>
       </div>
@@ -84,11 +89,17 @@
         </p>
         <a href="https://github.com/DakotaPaige/inhabitant">Github</a>
       </div>
-      <img src="images/inhabitent-gif.gif" alt="Inhabitent Website">
+      <div class="main-carousel">
+        <img src="images/inhabitent-gif.gif" alt="Inhabitent Website" class="carousel-cell">
+      </div>
     </div>
 
     <div class="project" data-aos="fade-right">
-      <img src="images/quotes-on-dev-gif.gif" alt="Quotes on Dev Website">
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <img src="images/quotes-on-dev-gif.gif" alt="Quotes on Dev Website">
+        </div>
+      </div>
       <div class="project-description">
         <p>Quotes on dev is a Wordpress site inspired by the QuotesOnDesign site. It's built out in PHP and javascript, and
           uses the Wordpress REST API to fetch and post quotes. Using the jQuery Ajax method, I made a GET request to the
@@ -107,11 +118,15 @@
         <a href="https://github.com/DakotaPaige/instanews">Github</a>
         <a href="https://dakotapaige.github.io/instanews/">Website</a>
       </div>
-      <img src="images/instanews-sample.gif" alt="Instanews Website">
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <img src="images/instanews-sample.gif" alt="Instanews Website">
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="contact-me" id="contact">
+  <section class="contact-me" id="contact" data-aos="fade-up">
     <h2 class="section-headers">Contact Me</h2>
 
     <div class="contact-section">

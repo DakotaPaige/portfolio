@@ -465,8 +465,9 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 0;
-  -webkit-box-shadow: 0px 2px 15px 2px black;
-          box-shadow: 0px 2px 15px 2px black; }
+  -webkit-box-shadow: 0px 2px 7px 2px grey;
+          box-shadow: 0px 2px 7px 2px grey;
+  z-index: 100; }
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -599,10 +600,10 @@ header {
     .project .project-description a {
       text-decoration: none;
       text-transform: uppercase;
-      color: #DD7355;
+      color: #ABC8C0;
       font-family: sans-serif; }
       .project .project-description a:hover {
-        color: #CD6131; }
+        color: #70566D; }
 
 .contact-section {
   display: -webkit-box;
@@ -616,18 +617,18 @@ header {
       margin: 5px 0; }
     .contact-section .contact-form input {
       width: 75%;
-      border: 2px solid #00404A;
+      border: 2px solid #274C32;
       border-radius: 3px;
       padding: 5px; }
     .contact-section .contact-form textarea {
       width: 75%;
       height: 100px;
-      border: 2px solid #00404A;
+      border: 2px solid #274C32;
       border-radius: 3px;
       padding: 5px; }
     .contact-section .contact-form button {
       display: block;
-      border: 2px solid #00404A;
+      border: 2px solid #274C32;
       background-color: white;
       color: #00404A;
       padding: 5px 20px;
@@ -635,8 +636,8 @@ header {
       text-transform: uppercase;
       font-weight: bold; }
       .contact-section .contact-form button:hover {
-        border-color: #DD7355;
-        background-color: #DD7355;
+        border-color: #70566D;
+        background-color: #70566D;
         color: white;
         cursor: pointer; }
   .contact-section .contact-information {
@@ -644,7 +645,7 @@ header {
   .contact-section .contact-title {
     font-weight: bold; }
   .contact-section .contact-link {
-    border: 2px solid #00404A;
+    border: 2px solid #274C32;
     border-radius: 3px;
     color: #00404A;
     text-transform: uppercase;
@@ -652,10 +653,23 @@ header {
     text-decoration: none; }
     .contact-section .contact-link:hover {
       color: white;
-      border-color: #DD7355;
-      background-color: #DD7355; }
+      border-color: #70566D;
+      background-color: #70566D; }
   .contact-section .contact-links {
     margin-top: 30px; }
+
+.contact-me {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 footer {
   background-color: #274C32;
