@@ -613,7 +613,7 @@ header {
     width: 450px;
     height: 250px; }
   .project .project-description {
-    max-width: 450px;
+    max-width: 45%;
     -ms-flex-item-align: center;
         align-self: center;
     color: #4B3734;
@@ -625,6 +625,27 @@ header {
       font-family: sans-serif; }
       .project .project-description a:hover {
         color: #70566D; }
+
+.project-links {
+  position: relative;
+  margin-right: 20px; }
+  .project-links:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #70566D;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  .project-links:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
 
 .contact-section {
   display: -webkit-box;
@@ -713,7 +734,7 @@ footer {
       text-decoration: underline; }
 
 .main-carousel {
-  width: 50%; }
+  width: 45%; }
 
 .flickity-prev-next-button {
   color: #274C32;
