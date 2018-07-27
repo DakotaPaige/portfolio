@@ -10,7 +10,7 @@ $(document).ready(function () {
     resize: true
   });
 
-  AOS.init({ offset: -5 });
+  AOS.init();
 
   $(window).scroll(function () {
     var currentScreenPosition = $(document).scrollTop();
