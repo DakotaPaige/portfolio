@@ -10,15 +10,37 @@ $(document).ready(function() {
 
   AOS.init();
 
+  $('#main-menu-toggle').on('click', function() {
+    $('.main-menu').toggleClass('menu-expanded');
+    $('#main-area-mobile').addClass('main-area-mobile');
+  });
+
+  $('#main-menu-close').on('click', function() {
+    $('.main-menu').removeClass('menu-expanded');
+    $('#main-area-mobile').removeClass('main-area-mobile');
+  });
+
+  $('#main-menu a').on('click', function() {
+    $('.main-menu').removeClass('menu-expanded');
+    $('#main-area-mobile').removeClass('main-area-mobile');
+  });
+
+  $('#main-area-mobile').on('click', function() {
+    $('.main-menu').removeClass('menu-expanded');
+    $('#main-area-mobile').removeClass('main-area-mobile');
+  });
+
   $(window).scroll(function() {
     let currentScreenPosition = $(document).scrollTop();
     if (currentScreenPosition < $('header').height()) {
       $('nav').addClass('banner-header');
+      $('.menu-toggle').removeClass('menu-toggle-dark');
     } else {
       $('nav').removeClass('banner-header');
+      $('.menu-toggle').addClass('menu-toggle-dark');
     }
   });
-  
+
   //defines the path for the cat to walk along
   let catpath = {
     entry: {

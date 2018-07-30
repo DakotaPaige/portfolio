@@ -9,12 +9,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="lib/flickity.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="build/css/style.min.css" />
   <link rel="stylesheet" href="lib/aos.css" />
 </head>
 
 <body>
-  <nav>
+
+  <!-- Mobile nav code from: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793 -->
+  <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu"
+    aria-label="Open main menu">
+    <span class="sr-only">Open main menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
+
+  <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+    <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
+      aria-label="Close main menu">
+      <span class="sr-only">Close main menu</span>
+      <span class="fas fa-times" aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact Me</a>
+      </li>
+      <li class="external-link">
+        <a href="https://github.com/DakotaPaige">Github</a>
+      </li>
+      <li class="external-link">
+        <a href="https://www.linkedin.com/in/dakota-mauza-191384152/">LinkedIn</a>
+      </li>
+    </ul>
+  </nav>
+  <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+
+
+
+  <nav class="desktop-nav">
     <ul class="social-links">
       <li>
         <a href="https://github.com/DakotaPaige">Github</a>
@@ -37,147 +75,160 @@
     </ul>
   </nav>
 
-  <header id="top">
-    <div class="front-banner">
-      <h1>Dakota Mauza</h1>
-      <h2>Full-Stack Developer</h2>
-      <img id="cat" src="images/sitting-cat.png" alt="cat">
-    </div>
-  </header>
+  <div id="main-area-mobile">
 
-  <section class="about-me" id="about" data-aos="fade-up">
-    <h2 class="section-headers">About Me</h2>
-    <div class="about-section">
-      <img src="images/me.png" alt="Dakota Mauza" class="picture-of-me">
-      <p>Hi! My name's Dakota, I'm a recent graduate from the Full Stack Development program at RED Academy in Vancouver. I
-        have experience working in front end development using Javascript and Python, with frameworks such as React, React
-        Native and Meteor, and back end development using Node.js, PostgreSQL, MongoDB and GraphQL. I'm also familiar with using the Wordpress CMS and PHP for it's back end. I have work experience
-        as a freelance web designer as well as spending multiple years in the customer service industry. In my spare time,
-        I love to hike and bring along my Canon t5i for some photography practice.</p>
-    </div>
-  </section>
-
-  <section class="projects-section" id="projects">
-    <h2 class="section-headers">My Projects</h2>
-
-    <!-- standard div layout for a project (alternate between img and description first) -->
-    <div class="project" data-aos="fade-right">
-      <div class="main-carousel">
-        <div class="carousel-cell"><img src="images/instant-theatre1.png" alt="Instant Theatre Website"></div>
-        <div class="carousel-cell"><img src="images/instant-theatre2.png" alt="Instant Theatre Website"></div>
+    <header id="top">
+      <div class="front-banner">
+        <h1>Dakota Mauza</h1>
+        <h2>Full-Stack Developer</h2>
+        <img id="cat" src="images/sitting-cat.png" alt="cat">
       </div>
-      <div class="project-description">
-        <p>While studying at RED Academy I was given the opportunity to work with a Vancouver based improv company Instant Theatre
-          to build out their website for mobile and desktop. It was my first time working with a design and development team,
-          where I was able to learn about hand-offs and git workflow within our team. We built a website based in Wordpress
-          using PHP, Javascript, and HTML/SASS. We built out custom post types, taxonomies, worked with multiple plug-ins
-          including Events Calendar Pro, and I was able to learn a lot while working with the Eventbrite API. For a detailed
-          explanation of the plug-ins and features implemented, visit the github repo.
-        </p>
-        <a href="https://github.com/DakotaPaige/it-winter-2018" class="project-links">Github</a>
-      </div>
-    </div>
+    </header>
 
-
-    <div class="project" data-aos="fade-left">
-      <div class=" project-description">
-        <p>Inhabitent is a faux nature-inspired shop front and blog site built using Wordpress. Developed in PHP and javascript,
-          it features multiple custom post types and taxonomies, utilizes the Custom Field Suite plugin to customize the
-          wordpress back end, custom widget plug ins for the sidebar, and more as listed in the repo. This project also utilized
-          jQuery and CSS animations for multiple features, and was a fun learning experience to deep dive into some features
-          of Wordpress.
-        </p>
-        <a href="https://inhabitent.dakotamauza.com" target="_blank" class="project-links">Website</a>
-        <a href="https://github.com/DakotaPaige/inhabitant" class="project-links">Github</a>
+    <section class="about-me" id="about" data-aos="fade-up">
+      <h2 class="section-headers">About Me</h2>
+      <div class="about-section">
+        <img src="images/me.png" alt="Dakota Mauza" class="picture-of-me">
+        <p>Hi! My name's Dakota, I'm a recent graduate from the Full Stack Development program at RED Academy in Vancouver.
+          I have experience working in front end development using Javascript and Python, with frameworks such as React,
+          React Native and Meteor, and back end development using Node.js, PostgreSQL, MongoDB and GraphQL. I'm also familiar
+          with using the Wordpress CMS and PHP for it's back end. I have work experience as a freelance web designer as well
+          as spending multiple years in the customer service industry. In my spare time, I love to hike and bring along my
+          Canon t5i for some photography practice.</p>
       </div>
-      <div class="main-carousel">
-          <div class="carousel-cell"><img src="images/inhabitent-home.png" alt="Inhabitent Home Page"></div>
-          <div class="carousel-cell"><img src="images/inhabitent-shop.png" alt="Inhbaintent Shop Page"></div>
-          <div class="carousel-cell"><img src="images/inhabitent-journal.png" alt="Inhabitent Journal Page"></div>
-      </div>
-    </div>
+    </section>
 
-    <div class="project" data-aos="fade-right">
-      <div class="main-carousel">
-        <div class="carousel-cell">
-          <img src="images/quotes-home.png" alt="Quotes on Dev Home Page">
+    <section class="projects-section" id="projects">
+      <h2 class="section-headers">My Projects</h2>
+
+      <!-- standard div layout for a project (alternate between img and description first) -->
+      <div class="project" data-aos="fade-right">
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="images/instant-theatre1.png" alt="Instant Theatre Website">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/instant-theatre2.png" alt="Instant Theatre Website">
+          </div>
         </div>
-        <div class="carousel-cell">
-          <img src="images/quotes-submit.png" alt="Quotes on Dev Submit a Quote Page">
-        </div>
-        <div class="carousel-cell">
-          <img src="images/quotes-on-dev-gif.gif" alt="Quotes on Dev Website">
+        <div class="project-description">
+          <p>While studying at RED Academy I was given the opportunity to work with a Vancouver based improv company Instant
+            Theatre to build out their website for mobile and desktop. It was my first time working with a design and development
+            team, where I was able to learn about hand-offs and git workflow within our team. We built a website based in
+            Wordpress using PHP, Javascript, and HTML/SASS. We built out custom post types, taxonomies, worked with multiple
+            plug-ins including Events Calendar Pro, and I was able to learn a lot while working with the Eventbrite API.
+            For a detailed explanation of the plug-ins and features implemented, visit the github repo.
+          </p>
+          <a href="https://github.com/DakotaPaige/it-winter-2018" class="project-links">Github</a>
         </div>
       </div>
-      <div class="project-description">
-        <p>Quotes on dev is a Wordpress site inspired by the QuotesOnDesign site. It's built out in PHP and javascript, and
-          uses the Wordpress REST API to fetch and post quotes. The website is responively designed using a mobile-first approach for three views, uses Gulp
-          for running build tasks, and uses SASS as a CSS pre-processor.</p>
-        <a href="https://quotes.dakotamauza.com" target="_blank" class="project-links">Website</a>
-        <a href="https://github.com/DakotaPaige/quotes-on-dev" class="project-links">Github</a>
-      </div>
-    </div>
 
-    <div class="project" data-aos="fade-left">
-      <div class="project-description">
-        <p>Instanews was a great project to dive into API requests using javascript and jQuery to fetch the top 12 latest stories
-          from the New York Times API. Using a simple HTML/SASS designed page with a few animations, I was able to focus
-          on fetching from the NYT API using the .Ajax method available from jQuery. </p>
-        <a href="https://dakotapaige.github.io/instanews/" class="project-links">Website</a>
-        <a href="https://github.com/DakotaPaige/instanews" class="project-links">Github</a>
-      </div>
-      <div class="main-carousel">
-        <div class="carousel-cell">
-          <img src="images/instanews-home.png" alt="Instanews Home">
+
+      <div class="project" data-aos="fade-left">
+        <div class=" project-description">
+          <p>Inhabitent is a faux nature-inspired shop front and blog site built using Wordpress. Developed in PHP and javascript,
+            it features multiple custom post types and taxonomies, utilizes the Custom Field Suite plugin to customize the
+            wordpress back end, custom widget plug ins for the sidebar, and more as listed in the repo. This project also
+            utilized jQuery and CSS animations for multiple features, and was a fun learning experience to deep dive into
+            some features of Wordpress.
+          </p>
+          <a href="https://inhabitent.dakotamauza.com" target="_blank" class="project-links">Website</a>
+          <a href="https://github.com/DakotaPaige/inhabitant" class="project-links">Github</a>
         </div>
-        <div class="carousel-cell">
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="images/inhabitent-home.png" alt="Inhabitent Home Page">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/inhabitent-shop.png" alt="Inhbaintent Shop Page">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/inhabitent-journal.png" alt="Inhabitent Journal Page">
+          </div>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-right">
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="images/quotes-home.png" alt="Quotes on Dev Home Page">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/quotes-submit.png" alt="Quotes on Dev Submit a Quote Page">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/quotes-on-dev-gif.gif" alt="Quotes on Dev Website">
+          </div>
+        </div>
+        <div class="project-description">
+          <p>Quotes on dev is a Wordpress site inspired by the QuotesOnDesign site. It's built out in PHP and javascript, and
+            uses the Wordpress REST API to fetch and post quotes. The website is responively designed using a mobile-first
+            approach for three views, uses Gulp for running build tasks, and uses SASS as a CSS pre-processor.</p>
+          <a href="https://quotes.dakotamauza.com" target="_blank" class="project-links">Website</a>
+          <a href="https://github.com/DakotaPaige/quotes-on-dev" class="project-links">Github</a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-left">
+        <div class="project-description">
+          <p>Instanews was a great project to dive into API requests using javascript and jQuery to fetch the top 12 latest
+            stories from the New York Times API. Using a simple HTML/SASS designed page with a few animations, I was able
+            to focus on fetching from the NYT API using the .Ajax method available from jQuery. </p>
+          <a href="https://dakotapaige.github.io/instanews/" class="project-links">Website</a>
+          <a href="https://github.com/DakotaPaige/instanews" class="project-links">Github</a>
+        </div>
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="images/instanews-home.png" alt="Instanews Home">
+          </div>
+          <div class="carousel-cell">
             <img src="images/instanews-sample.gif" alt="Instanews Website">
           </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-me" id="contact" data-aos="fade-up">
-    <h2 class="section-headers">Contact Me</h2>
-
-    <div class="contact-section">
-
-      <!-- CONTACT FORM FROM WUFOO -->
-      <div class="contact-form">
-        <form action="https://formspree.io/dakota.paige@hotmail.com" method="POST">
-          <h4>Your Name:</h4>
-          <input type="text" name="name">
-          <h4>Your Email:</h4>
-          <input type="email" name="_replyto" placeholder="kittens@example.com">
-          <h4>Subject:</h4>
-          <input type="text" name="subject">
-          <h4>Message:</h4>
-          <textarea name="message" placeholder="Your message"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-
-      <div class="contact-information">
-        <p>Send me a message with the form to the left, send me an e-mail, or visit one of my profiles below!</p>
-        <p>
-          <span class="contact-title">E-mail: </span>dakota.paige@hotmail.com</p>
-        <div class="contact-links">
-          <a href="https://github.com/DakotaPaige" class="contact-link">Github</a>
-          <a href="https://www.linkedin.com/in/dakota-mauza-191384152/" class="contact-link">LinkedIn</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <a href="#top">Back to top</a>
-  </footer>
+    <section class="contact-me" id="contact" data-aos="fade-up">
+      <h2 class="section-headers">Contact Me</h2>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-    </script>
+      <div class="contact-section">
+
+        <!-- CONTACT FORM FROM WUFOO -->
+        <div class="contact-form">
+          <form action="https://formspree.io/dakota.paige@hotmail.com" method="POST">
+            <h4>Your Name:</h4>
+            <input type="text" name="name">
+            <h4>Your Email:</h4>
+            <input type="email" name="_replyto" placeholder="kittens@example.com">
+            <h4>Subject:</h4>
+            <input type="text" name="subject">
+            <h4>Message:</h4>
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-information">
+          <p>Send me a message with the form to the left, send me an e-mail, or visit one of my profiles below!</p>
+          <p>
+            <span class="contact-title">E-mail: </span>dakota.paige@hotmail.com</p>
+          <div class="contact-links">
+            <a href="https://github.com/DakotaPaige" class="contact-link">Github</a>
+            <a href="https://www.linkedin.com/in/dakota-mauza-191384152/" class="contact-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#top">Back to top</a>
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  </script>
   <script src="lib/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
   <script src="lib/flickity.pkgd.min.js"></script>
