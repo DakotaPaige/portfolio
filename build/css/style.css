@@ -714,9 +714,13 @@ header {
           align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
   width: 90%; }
   @media (min-width: 600px) {
     .about-section {
+      margin-top: 0;
+      margin-bottom: 0;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
@@ -770,7 +774,11 @@ header {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 100px; }
+  @media (min-width: 600px) {
+    .about-me {
+      margin-bottom: 0; } }
 
 .project {
   display: -webkit-box;
@@ -879,23 +887,43 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1000px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
   margin: 0 auto 50px; }
+  @media (min-width: 1000px) {
+    .contact-section {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 1000px; } }
   .contact-section .contact-form {
-    width: 50%; }
+    width: 100%; }
+    @media (min-width: 1000px) {
+      .contact-section .contact-form {
+        width: 50%; } }
     .contact-section .contact-form h4 {
       margin: 5px 0; }
     .contact-section .contact-form input {
-      width: 75%;
+      width: 95%;
       border: 2px solid #274C32;
       border-radius: 3px;
       padding: 5px; }
+      @media (min-width: 600px) {
+        .contact-section .contact-form input {
+          width: 75%; } }
     .contact-section .contact-form textarea {
-      width: 75%;
+      width: 95%;
       height: 100px;
       border: 2px solid #274C32;
       border-radius: 3px;
       padding: 5px; }
+      @media (min-width: 600px) {
+        .contact-section .contact-form textarea {
+          width: 75%; } }
     .contact-section .contact-form button {
       display: block;
       border: 2px solid #274C32;
@@ -911,7 +939,10 @@ header {
         color: white;
         cursor: pointer; }
   .contact-section .contact-information {
-    width: 50%; }
+    width: 100%; }
+    @media (min-width: 600px) {
+      .contact-section .contact-information {
+        width: 50%; } }
   .contact-section .contact-title {
     font-weight: bold; }
   .contact-section .contact-link {
@@ -939,7 +970,11 @@ header {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 10%; }
+  @media (min-width: 600px) {
+    .contact-me {
+      margin-bottom: 0; } }
 
 footer {
   background-color: #274C32;
