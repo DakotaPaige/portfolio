@@ -88,13 +88,13 @@
     <section class="about-me" id="about" data-aos="fade-up">
       <h2 class="section-headers">About Me</h2>
       <div class="about-section">
-        <img src="images/me.png" alt="Dakota Mauza" class="picture-of-me">
+        <img src="images/PictureOfMe.jpg" alt="Dakota Mauza" class="picture-of-me">
         <p>Hi! My name's Dakota, I'm a recent graduate from the Full Stack Development program at RED Academy in Vancouver.
           I have experience working in front end development using Javascript and Python, with frameworks such as React,
           React Native and Meteor, and back end development using Node.js, PostgreSQL, MongoDB and GraphQL. I'm also familiar
-          with using the Wordpress CMS and PHP for it's back end. I have work experience as a freelance web designer as well
-          as spending multiple years in the customer service industry. In my spare time, I love to hike and bring along my
-          Canon t5i for some photography practice.</p>
+          with using the Wordpress CMS and PHP for it's back end. I have work experience as a freelance web developer as
+          well as spending multiple years in the customer service industry. In my spare time, I love to hike and bring along
+          my Canon t5i for some photography practice.</p>
       </div>
     </section>
 
@@ -112,6 +112,7 @@
           </div>
         </div>
         <div class="project-description">
+          <h2>Instant Theatre</h2>
           <p>While studying at RED Academy I was given the opportunity to work with a Vancouver based improv company Instant
             Theatre to build out their website for mobile and desktop. It was my first time working with a design and development
             team, where I was able to learn about hand-offs and git workflow within our team. We built a website based in
@@ -123,9 +124,65 @@
         </div>
       </div>
 
+      <div class="project" data-aos="fade-left">
+        <div class="project-description">
+          <h2>Boomtown</h2>
+          <p>Boomtown is a progressive web app used to share items between users built in React. It uses Redux for state management,
+            PostgreSQL for the item database and firebase for the user and image database. Being my first full-stack application
+            built, it was a great learning experience to learn about multiple databases and integrations. MaterialUI is used
+            for the styling.
+          </p>
+          <a href="https://github.com/DakotaPaige/boomtown" class="project-links">Github</a>
+        </div>
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img src="images/boomtown-home.png" alt="Boomtown Home">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/boomtown-homepage-gif.gif" alt="Boomtown Home Gif">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/boomtown-profile.png" alt="Boomtown Profile Page">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/boomtown-share.png" alt="Boomtown Share Page">
+          </div>
+          <div class="carousel-cell">
+            <img src="images/boomtown-share-gif.gif" alt="Boomtown Share Gif">
+          </div>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-right">
+        <div class="main-carousel">
+          <div class="carousel-cell mobile-image">
+            <img src="images/r10-about.png" alt="R10 About Screen">
+          </div>
+          <div class="carousel-cell mobile-image">
+            <img src="images/r10-about-gif.gif" alt="R10 About Screen Gif">
+          </div>
+          <div class="carousel-cell mobile-image">
+            <img src="images/r10-schedule.png" alt="R10 Schedule Screen">
+          </div>
+          <div class="carousel-cell mobile-image">
+            <img src="images/r10-schedule-gif.gif" alt="R10 Schedule Screen Gif">
+          </div>
+        </div>
+        <div class="project-description">
+          <h2>R10</h2>
+          <p>R10 is a cross-platform applicaton built in React Native used for a mock developer conference. It uses the Realm
+            database to store favourites data, and Apollo Client and GraphQL to fetch the session data. I used multiple modules
+            built in React Native such as Animate for some simple animations on the About screen, and the app uses Redux
+            for some basic state management.
+          </p>
+          <a href="https://github.com/DakotaPaige/r10" class="project-links">Github</a>
+        </div>
+      </div>
+
 
       <div class="project" data-aos="fade-left">
         <div class=" project-description">
+          <h2>Inhabitent</h2>
           <p>Inhabitent is a faux nature-inspired shop front and blog site built using Wordpress. Developed in PHP and javascript,
             it features multiple custom post types and taxonomies, utilizes the Custom Field Suite plugin to customize the
             wordpress back end, custom widget plug ins for the sidebar, and more as listed in the repo. This project also
@@ -161,6 +218,7 @@
           </div>
         </div>
         <div class="project-description">
+          <h2>Quotes on Dev</h2>
           <p>Quotes on dev is a Wordpress site inspired by the QuotesOnDesign site. It's built out in PHP and javascript, and
             uses the Wordpress REST API to fetch and post quotes. The website is responively designed using a mobile-first
             approach for three views, uses Gulp for running build tasks, and uses SASS as a CSS pre-processor.</p>
@@ -171,6 +229,7 @@
 
       <div class="project" data-aos="fade-left">
         <div class="project-description">
+          <h2>Instanews</h2>
           <p>Instanews was a great project to dive into API requests using javascript and jQuery to fetch the top 12 latest
             stories from the New York Times API. Using a simple HTML/SASS designed page with a few animations, I was able
             to focus on fetching from the NYT API using the .Ajax method available from jQuery. </p>
@@ -236,7 +295,7 @@
   <script src="lib/debug.addIndicators.min.js"></script>
   <script src="lib/animation.gsap.min.js"></script>
   <script src="lib/aos.js"></script>
-  <script src="JS/transpiled/function.js"></script>
+  <script src="build/js/function.min.js"></script>
 </body>
 
 </html>
